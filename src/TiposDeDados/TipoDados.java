@@ -7,5 +7,7 @@ public class TipoDados {
         long numero = 132323L;
         char inicial = 'n';
         boolean vivoOuMorto = true;
+
+        System.out.println("Idade: " + idade);
     }
 }
