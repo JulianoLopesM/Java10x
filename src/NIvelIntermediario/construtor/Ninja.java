@@ -1,4 +1,23 @@
 package NIvelIntermediario.construtor;
 
 public class Ninja {
+    String nome;
+    String aldeia;
+    String ranking;
+    Boolean vivoOumorto;
+
+    public Ninja(String nome, String aldeia, String ranking, Boolean vivoOumorto) {
+        this.nome = nome;
+        this.aldeia = aldeia;
+        this.ranking = ranking;
+        this.vivoOumorto = vivoOumorto;
+
+    }
+    public void exibir(){
+        String status = vivoOumorto ? "Vivo" : "Morto";
+        System.out.println("Nome: " + nome);
+        System.out.println("Aldeia: " + aldeia);
+        System.out.println("Ranking: " + ranking);
+        System.out.println("Status: " + status);
+    }
 }
