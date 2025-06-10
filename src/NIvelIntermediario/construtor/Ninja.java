@@ -26,6 +26,10 @@ public abstract class Ninja {
         System.out.println("Status: " + status);
     }
 
-    public abstract void sabedoria();
+    public abstract void sabedoria(); //sou obrigado a implementar nas subs classes
+
+    public void ola(){
+        //nao sou obrigado a implementar nas subs classes
+    }
 
 }
