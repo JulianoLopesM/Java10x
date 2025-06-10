@@ -21,3 +21,5 @@ Interface: É um tipo de contrato que define métodos que uma classe deve implem
 @override: Serve para indicar que um método está sendo sobrescrito de uma classe pai ou de uma interface. Ela ajuda o compilador a validar que você realmente está sobrescrevendo um método existente.
 
 Construtor: É um método especial usado para inicializar objetos no momento em que são criados. Ele tem o mesmo nome da classe e não possui tipo de retorno. Pode receber parâmetros para definir valores iniciais dos atributos. Toda classe tem um construtor padrão, mas é possível criar construtores personalizados.
+
+Classe abstrata: Serve para impedir que objetos sejam instanciados diretamente a partir dela. Pode conter métodos abstratos (sem corpo), que devem ser obrigatoriamente implementados pelas subclasses."

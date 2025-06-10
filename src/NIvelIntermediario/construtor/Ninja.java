@@ -1,10 +1,15 @@
 package NIvelIntermediario.construtor;
 
-public class Ninja {
+public abstract class Ninja {
     String nome;
     String aldeia;
     String ranking;
     Boolean vivoOumorto;
+
+    public Ninja(){
+
+    }
+
 
     public Ninja(String nome, String aldeia, String ranking, Boolean vivoOumorto) {
         this.nome = nome;
@@ -20,4 +25,7 @@ public class Ninja {
         System.out.println("Ranking: " + ranking);
         System.out.println("Status: " + status);
     }
+
+    public abstract void sabedoria();
+
 }
