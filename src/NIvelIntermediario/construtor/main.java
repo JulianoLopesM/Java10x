@@ -2,7 +2,15 @@ package NIvelIntermediario.construtor;
 
 public class main {
     public static void main(String[] args) {
-        Ninja kakashi = new Ninja("Kakashi hatake", "Folha", "Jounin" , true);
+        Hatake kakashi = new Hatake();
+        kakashi.nome = "kakashi hatake";
+        kakashi.aldeia =   "Folha";
+        kakashi.ranking = "Jounin";
+        kakashi.vivoOumorto = true;
+
         kakashi.exibir();
+        kakashi.sabedoria();
+
+
     }
 }
