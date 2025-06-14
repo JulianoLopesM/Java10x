@@ -1,6 +1,6 @@
 package NIvelIntermediario.aplicandooop;
 
-public class Uchiha extends Ninja{
+public class Uchiha extends Ninja implements Sharingan {
 
     public Uchiha(){
         super();// pegando o construtor vazio da superclasse
@@ -8,6 +8,11 @@ public class Uchiha extends Ninja{
 
     public Uchiha(String nome, String cla, int idade) {
         super(nome, cla, idade);// pegando o construtor com todos os parametros da super classe
+    }
+
+    @Override
+    public void ativarSharingan() {
+        System.out.println("Meu nome é " + nome + ", ativei o sharingan");
     }
 
     @Override
