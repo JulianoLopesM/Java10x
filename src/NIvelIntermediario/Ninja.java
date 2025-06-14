@@ -1,6 +1,6 @@
 package NIvelIntermediario;
 
-public class Ninja {
+public abstract class Ninja {
     String nome;
     int idade;
     String Aldeia;
