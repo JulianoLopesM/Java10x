@@ -2,12 +2,16 @@ package NIvelIntermediario.aplicandooop;
 
 public class Uchiha extends Ninja implements Sharingan {
 
-    public Uchiha(){
+    public Uchiha() {
         super();// pegando o construtor vazio da superclasse
     }
 
     public Uchiha(String nome, String cla, int idade) {
         super(nome, cla, idade);// pegando o construtor com todos os parametros da super classe
+    }
+
+    public Uchiha(String nome, String cla, int idade, int numeroDeMissoes, NivelNinja rank) {
+        super(nome, cla, idade, numeroDeMissoes, rank);
     }
 
     @Override
@@ -17,8 +21,8 @@ public class Uchiha extends Ninja implements Sharingan {
 
     @Override
     public void habilidadeEspecial() {
-        switch (this.nome){
-            case  "Sasuke Uchiha":
+        switch (this.nome) {
+            case "Sasuke Uchiha":
                 System.out.println("O meu nome é " + nome + ", minha habilidade especial é o chidori!");
                 break;
             case "Itachi Uchiha":
@@ -30,7 +34,7 @@ public class Uchiha extends Ninja implements Sharingan {
     }
 
     @Override
-    public void estrategiaEspecialNinja(){
+    public void estrategiaEspecialNinja() {
         System.out.println("Minha estratégia envolve shurikens com o jutsu bola de fogo");
     }
 }

@@ -1,17 +1,20 @@
 package NIvelIntermediario.aplicandooop;
 
-import org.w3c.dom.ls.LSOutput;
+public class Uzumaki extends Ninja {
 
-public class Uzumaki extends Ninja{
-
-    public Uzumaki(){
+    public Uzumaki() {
 
     }
-    public Uzumaki(String nome, String cla, int idade){
+
+    public Uzumaki(String nome, String cla, int idade) {
         super(nome, cla, idade);
     }
 
-    public void estrategiaEspecialNinja(){
+    public Uzumaki(String nome, String cla, int idade, int numeroDeMissoes, NivelNinja rank) {
+        super(nome, cla, idade, numeroDeMissoes, rank);
+    }
+
+    public void estrategiaEspecialNinja() {
         System.out.println("Minha estratégia envolve multiplos clones das sombras");
     }
 
@@ -19,9 +22,4 @@ public class Uzumaki extends Ninja{
     public void habilidadeEspecial() {
         System.out.println("Minha habilidade especial é o rasengan!");
     }
-
-
-
-
-
 }
